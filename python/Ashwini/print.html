@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main
+      class="min-h-screen min-w-full flex flex-col items-center justify-center gap-2"
+    >
+      {% for x in data %}
+      <div class="w-[200px]">{{x + ": "+data[x] if x!="password"}}</div>
+      {% endfor %}
+      <a href="{{href}}" class="px-4 border border-black hover:bg-gray-200">
+        Print
+      </a>
+    </main>
+  </body>
+</html>

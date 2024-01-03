@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registration</title>
+  </head>
+  <body style="background-color:#808080">
+    <main class="min-h-screen flex justify-center items-center">
+      <section>
+        <form
+          class="flex gap-2 flex-col w-[200px]"
+          action="/Signup"
+          method="post"
+        >
+          <label for="username"><i><b>Username</b></i></label>
+          <input
+            name="username"
+            class="border px-2 border-black"
+            type="text"
+            id="username"
+            required
+          />
+          <label for="password"><i><b>Password</i></b></label>
+          <input
+            name="password"
+            class="border px-2 border-black"
+            type="password"
+            id="password"
+            required
+          />
+          <label for="date"><i><b>Date</i></b></label>
+          <input
+            name="date"
+            class="border px-2 border-black"
+            type="datetime-local"
+            id="date"
+            required
+          />
+
+          <button
+            class="flex-1 px-4 border border-black hover:bg-gray-200"
+            type="submit"
+          >
+            <b>Signup</b>
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
